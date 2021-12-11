@@ -27,3 +27,6 @@ RUN mkdir /icu && cd /icu \
 # Install devtoolset-8 and git
 RUN yum -y install devtoolset-8-toolchain rh-git218 \
  && yum clean all
+
+# Add linuxdeployqt
+ADD linuxdeployqt /root/linuxdeployqt
