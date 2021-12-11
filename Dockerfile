@@ -11,7 +11,7 @@ RUN yum -y install ccache cmake3 gcc gcc-c++ make ninja-build wget \
  && yum clean all
 
 # Install dependencies
-RUN yum -y install fontconfig libxcb-devel libxkbcommon-x11-devel mesa-libGL-devel xcb-util-image xcb-util-wm zlib-devel \
+RUN yum -y install fontconfig libxcb-devel libxkbcommon-x11-devel mesa-libGL-devel xcb-util-image xcb-util-keysyms xcb-util-wm zlib-devel \
  && yum clean all
 
 # Install ICU
